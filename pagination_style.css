@@ -1,0 +1,61 @@
+:root {
+  --color-text-page: #000000;
+  --krug-page-back: #DCDCDC;
+  --krug-page-border: #FFFFFF;
+  --krug-new-border: #8B4513;
+
+  --color-hover-page: #584fa9;
+  --color-active-page: #0000CD;
+}
+.osnova {
+  /* outline: 1px solid; */
+  width: 650px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+  .ramka {
+    /* outline: 1px solid; */
+    width: 620px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+    .page-list{
+      /* outline: 1px solid; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px;}
+
+    .krug {
+      border: 1px solid var(--krug-new-border);
+      background: var(--krug-page-back);
+      padding: 0px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 17px;
+      color: var(--color-text-page);
+      font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .5s;}
+    .krug:hover {background: var(--color-hover-page);
+      color: var(--krug-page-border);}
+    .active {background: var(--color-active-page);
+      color: var(--krug-page-border);}
+
+    .krug-left {margin-right: 17px;}
+    .krug-right {margin-left: 17px;}
+
+.non-styles{
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;}
+
+

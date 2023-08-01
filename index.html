@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Online_Store</title>
+
+    <link rel="stylesheet" href="./style-header-component.css">
+    <link rel="stylesheet" href="./style-grid.css">
+    <link rel="stylesheet" href="./style-card_grid.css">
+    <link rel="stylesheet" href="./pagination_style.css">
+    <link rel="stylesheet" href="./style_filters_list.css">
+    <link rel="stylesheet" href="./style_button_clear_filters.css">
+    <link rel="stylesheet" href="./style_filters_double_slider.css">
+    <link rel="stylesheet" href="./style-search-component.css">
+    <link rel="stylesheet" href="./style_carts_list.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+        
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="module">
+        import OnlineStorePage from "./index.js";
+
+        const page = new OnlineStorePage();
+    
+        const someElement = document.querySelector("#root");
+
+        someElement.append(page.element);
+    </script>
+</body>
+</html>

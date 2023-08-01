@@ -1,0 +1,49 @@
+:root {
+    --color-background-sait: #FFF8DC;
+}
+
+body {
+    background-color: var(--color-background-sait);
+}
+.wrapper-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px minmax(670px, 1050px);
+    grid-template-rows: auto 45px minmax(1420px, auto) 60px;
+    grid-template-areas: 
+    "header header"
+    "nav search"
+    "nav main"
+    ". pagination";
+    gap: 20px 20px;
+}
+
+.item-header {
+    grid-area: header;
+}
+
+.item-products {
+    grid-area: nav;
+}
+
+.item-search {
+    grid-area: search;
+}
+
+.item-main {
+   grid-area: main;
+}
+
+.item-main-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 20px 20px;
+}
+
+.item-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: pagination;    
+}

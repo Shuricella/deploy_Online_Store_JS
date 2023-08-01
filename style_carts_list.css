@@ -1,0 +1,214 @@
+:root {
+    --color-text: #000000;
+    --color-box-shadow: #555;
+    --color-decor: #7E72F2;
+    --color-base: #FFFFFF;
+
+    --carts-hover-total: #808080;
+    --carts-active-total: #584fa9;
+
+    --color-hover-add: #00008B;
+    
+    --font-cart-list: 'Montserrat', sans-serif;
+}
+
+.text-cart-list {
+    font-family: var(--font-cart-list);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    border-radius: 15px;
+    border: none;
+    padding: 0px 0px 0px 0px;
+}
+
+.wrapper-cart-list {
+    outline: 1px solid;
+    margin: 0 auto;
+    max-width: 1300px;
+    min-width: 1100px;
+    
+    background-color: #fefefe;
+}
+
+.header-close {
+    /* outline: 1px solid; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    padding: 0px 20px 0px 0px;
+}
+
+.header-close a {
+    display: flex;
+    align-items: center;
+}
+
+.carts-list {
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 10px 10px;
+}
+
+.block-cart-title {
+    max-width: 750px;
+    padding: 0px 10px 0px 10px;
+}
+
+.cart {
+    /* outline: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+    margin: 0px 0px 15px 0px;
+    border-radius: 7px ;
+
+    box-shadow:0 0 10px var(--color-box-shadow);
+}
+
+.cart-img {
+    /* outline: 1px solid; */
+    display: flex;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.cart-title {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: var(--color-text);
+    margin: 0px 0px 0px 0px;
+}
+
+.cart-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+    .amount-product {
+        display: flex;
+        align-items: center;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .amount-product button {
+        margin: 0; 
+        border: 0; 
+        outline: none; 
+        background-color: transparent; 
+    }
+
+        .amount-product i {
+            cursor: pointer; 
+        }
+
+        .amount-product i:hover {
+            background: var(--carts-hover-total);
+            color: var(--color-base);
+            transition: .5s;
+        }
+
+        .amount-product i:active {
+            background: var(--carts-active-total);
+            color: var(--color-base);
+            transition: none;
+        }
+
+    .amount-product p {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 3px 0px 3px;
+
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+    }
+
+    .price-title {
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+
+        margin: 0px 0px 0px 0px;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .delete-title {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .delete-title button {
+        margin: 0; 
+        border: 0; 
+        outline: none; 
+        background-color: transparent; 
+    }
+
+        .delete-title i {
+            cursor: pointer;
+        }
+
+        .delete-title i:hover {
+            background-color: #B0E0E6;
+            
+            transition: .5s;
+        }
+        
+    .cart-total {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 0px 0px;
+        padding: 10px 10px 10px 10px;
+    }
+
+        .cart-total h2 {
+            margin: 0px 0px 0px 0px;
+
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+
+        .cart-total p {
+            margin: 0px 0px 0px 3px;
+
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+    .order-button {
+        display: flex;
+        justify-content: center;
+        
+        padding: 0px 0px 10px 0px;
+    }
+
+        .order-button button {cursor: pointer; }
+
+        .order-button button {
+            width: 200px;
+            border-radius: 3px 3px 3px 3px;
+            border: none;
+            padding: 8px;
+
+            font-size: 12px;
+            background-color: var(--color-decor);
+            color: var(--color-base);
+        }
+
+        .order-button button:hover {
+            background-color: var(--color-hover-add);
+            transition: .5s;
+        }
+        .order-button button:active {
+            background-color: var(--carts-active-total);
+            transition: none;
+        }
